@@ -127,7 +127,7 @@ jobs:
         -e "ssh -i private_key.pem" ./ \
         ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/home/${{ secrets.EC2_USER }}/project/
 
-        
+    # deploy할 때, 8080포트를 사용하고 있는 컨테이너가 있으면 종료하기
     - name: Deploy to EC2 and build Docker image
       uses: appleboy/ssh-action@master
       with:
