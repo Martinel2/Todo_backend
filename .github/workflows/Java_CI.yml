@@ -1,0 +1,169 @@
+name: Java CI with Gradle
+
+on:
+  push:
+    branches: [ "develop" ]
+  #  tags: Ver*
+  pull_request:
+    branches: [ "develop" ]
+  #  tags: Ver*
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    # MySQL 서비스 설정은 주석 처리하여 H2를 사용할 예정
+    # services:
+      # MySQL 부분 주석 처리
+      # mysql:
+      #   image: mysql:8.0
+      #   env:
+      #     MYSQL_ROOT_PASSWORD: 0000  # root 비밀번호 설정
+      #     MYSQL_DATABASE: todo  # 사용할 데이터베이스
+      #     MYSQL_USER: testuser  # 일반 사용자 생성
+      #     MYSQL_PASSWORD: testpassworD  # 일반 사용자 비밀번호
+      #   ports:
+      #     - 3306:3306  # 포트 매핑
+      #   options: --health-cmd="mysqladmin ping -h 127.0.0.1 --silent" --health-interval=10s --health-timeout=5s --health-retries=3
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'adopt'
+        cache: gradle # 빌드 속도를 높이기 위해 gradle 캐시 설정 (매번 gradle 종속성을 계속 설치할 순 없으니)
+
+       
+    # 충분한 대기 시간을 추가하여 MySQL 서버가 준비되도록 함
+    # - name: Wait for MySQL to be ready
+    #  run: sleep 10
+
+    # - name: Check MySQL connection
+    #   run: |
+    #     mysql -h 127.0.0.1 -u testuser -ptestpassworD  # 'mysql' 대신 '127.0.0.1' 사용
+
+    # MySQL 포트 확인도 필요 없으므로 주석 처리
+    # - name: Check MySQL port 3306
+    #   run: telnet localhost 3306
+
+    - name: Grant execute permission for gradlew
+      run: cd todo && chmod +x gradlew
+
+    - name: Install dependencies
+      run: cd todo && ./gradlew dependencies
+
+    - name: Run tests
+      # H2에 대한 설정을 환경 변수로 추가
+      env:
+        SPRING_PROFILES_ACTIVE: "test"  # test 프로파일 사용
+        DATABASE_URL: "jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1"  # H2 메모리 DB 사용
+        DB_USERNAME: "sa"  # H2 기본 사용자
+        DB_PASSWORD: "password"  # H2 기본 비밀번호는 빈 문자열
+      run: |
+        cd todo
+        ./gradlew build
+
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: Project
+        # 업로드할 파일의 경로를 지정 (build/libs에 Project jar 파일을 업로드한다.)
+        # 빌드 단계에서 생성된 jar파일
+        path: todo/build/libs/*.jar
+
+    - name: 테스트 결과를 PR에 코멘트로 등록하기
+      uses: EnricoMi/publish-unit-test-result-action@v2
+      if: always()
+      with:
+        files: '**/build/test-results/test/TEST-*.xml'
+  cd:
+    runs-on: ubuntu-latest
+    needs: ci # ➜ ci가 성공해야 cd 실행
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Download build artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: Project
+        path: ./todo/build/libs
+
+  #출처 https://min9yu98.tistory.com/18  
+
+    - name: Create .ssh directory and add EC2 host key
+    # run은 명령을 실행하는데 사용한다.
+    # ssh 연결 시 해당 호스트에 연결할 때 호스트키를 확인하고, 연결을 안전하게 유지할 수 있다.
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+
+  # ec2 접속을 위해 깃허브에서 설정한 ssh key (pem key)를 생성하고 권한을 부여
+    - name: Create private key file
+      run: |
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key.pem
+        chmod 600 private_key.pem
+
+  #  - name: Check existing JAR
+  #    run: |
+  #      ssh -i private_key.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "ls /home/${{ secrets.EC2_USER }}/*.jar" || echo "No existing file"
+
+    # EC2로 JAR 파일 업로드 (변경된 경우만)
+    #- name: Upload folder to EC2
+    #  run: |
+    #    scp -i private_key.pem -r todo/build/libs/ ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/home/${{ secrets.EC2_USER }}/
+    
+    
+    - name: Ensure target directory exists on EC2
+      run: |
+        ssh -i private_key.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "mkdir -p /home/${{ secrets.EC2_USER }}/project"
+
+    # rsync로 해당 이름을 가진 파일은 제외 - 이 코드는 코드안에 주석을 넣으면 오류
+    # 변경된 파일이 있으면 업로드 하기    
+    - name: Upload project files to EC2
+      run: |
+        rsync -avz --progress --exclude 'node_modules' \
+        -e "ssh -i private_key.pem" ./todo/ \
+        ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/home/${{ secrets.EC2_USER }}/project/
+
+        
+    - name: Deploy to EC2 and build Docker image
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd /home/${{ secrets.EC2_USER }}/project/
+          
+          # 기존 컨테이너 중지 및 삭제
+          docker stop backend-container || true
+          docker rm backend-container || true
+          
+          # 최신 코드 가져오기
+          git pull origin develop
+          
+          # Docker 이미지 빌드
+          docker build -t todo .
+          
+          # 컨테이너 실행
+          docker run -d -p 8080:8080 --name backend-container todo
+  
+
+    #- name: Deploy to EC2 and build
+    #  uses: appleboy/ssh-action@master
+    #  with:
+    #    host: ${{ secrets.EC2_HOST }}
+    #    username: ${{ secrets.EC2_USER }}
+    #    key: ${{ secrets.SSH_PRIVATE_KEY }}
+    #    script: |
+    #      cd /home/${{ secrets.EC2_USER }}/project
+    #      git pull origin develop
+    #      ./gradlew build
+    #      nohup java -jar build/libs/*.jar > /home/${{ secrets.EC2_USER }}/log/app_log.out 2>&1 &
+
+    - name: Remove private key file
+      run: rm -f private_key.pem
