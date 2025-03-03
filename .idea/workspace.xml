@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd 해보기- docker 사용해서 빌드하기">
-      <change beforePath="$PROJECT_DIR$/../.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.github/workflows/Java_CI.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,14 +278,7 @@
       <workItem from="1740405002875" duration="16183000" />
       <workItem from="1740486643555" duration="18660000" />
       <workItem from="1740829081267" duration="7056000" />
-      <workItem from="1740985931946" duration="7541000" />
-    </task>
-    <task id="LOCAL-00073" summary="ci test 결고 pr에 작성하기 - pr시에도 ci하도록 함">
-      <created>1739972261867</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1739972261867</updated>
+      <workItem from="1740985931946" duration="8112000" />
     </task>
     <task id="LOCAL-00074" summary="pr되는지 테스트">
       <created>1739972586590</created>
@@ -623,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741011090752</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="cd 해보기- docker 사용해서 빌드하기">
+      <created>1741012574316</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1741012574316</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
