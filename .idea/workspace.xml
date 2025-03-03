@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd 해보기- docker 사용해서 빌드하기">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd 해보기- docker 사용해서 빌드하기, git secret 설정">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
         <entry key="$PROJECT_DIR$/.." value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -64,37 +65,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/a/Documents/project_Todo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;e888406ea6c753b1b9a2fc4289730fab&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelOrder2": "2",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth2": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/a/Documents/project_Todo/todo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "e888406ea6c753b1b9a2fc4289730fab",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\a\Documents\project_Todo\todo\src\test\resources" />
@@ -223,6 +224,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TodoApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="project_Todo.todo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.todo.todo.TodoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TodoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="todo.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.todo.todo.TodoApplication" />
@@ -278,35 +286,7 @@
       <workItem from="1740405002875" duration="16183000" />
       <workItem from="1740486643555" duration="18660000" />
       <workItem from="1740829081267" duration="7056000" />
-      <workItem from="1740985931946" duration="8112000" />
-    </task>
-    <task id="LOCAL-00074" summary="pr되는지 테스트">
-      <created>1739972586590</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1739972586590</updated>
-    </task>
-    <task id="LOCAL-00075" summary="pr되는지 테스트">
-      <created>1739972918540</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1739972918540</updated>
-    </task>
-    <task id="LOCAL-00076" summary="OAuth2Service 를 테스트하는 코드 작성 - 기능 테스트">
-      <created>1740062025625</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1740062025625</updated>
-    </task>
-    <task id="LOCAL-00077" summary="CustomUserDetailsService를 테스트하는 코드 작성 - 기능 테스트">
-      <created>1740068870359</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1740068870359</updated>
+      <workItem from="1740985931946" duration="10644000" />
     </task>
     <task id="LOCAL-00078" summary="리포지토리,서비스,컨트롤러에 대한 모든 단위 기능테스트 코드 작성 완료">
       <created>1740147958628</created>
@@ -623,7 +603,35 @@
       <option name="project" value="LOCAL" />
       <updated>1741012574316</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="cd 해보기- docker 사용해서 빌드하기">
+      <created>1741013846374</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1741013846374</updated>
+    </task>
+    <task id="LOCAL-00124" summary="cd 해보기- docker 사용해서 빌드하기">
+      <created>1741013900729</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1741013900729</updated>
+    </task>
+    <task id="LOCAL-00125" summary="cd 해보기- docker 사용해서 빌드하기">
+      <created>1741014099908</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1741014099908</updated>
+    </task>
+    <task id="LOCAL-00126" summary="cd 해보기- docker 사용해서 빌드하기, git secret 설정">
+      <created>1741014609678</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1741014609678</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,9 +662,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
-      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Todo 삭제 기능 추가 - 프론트엔드" />
     <MESSAGE value="notion식으로 코드가 작동하도록 변경 - 백엔드는 update코드 추가정도만 진행, 테스트도 성공적으로 완료." />
     <MESSAGE value="notion식으로 코드가 작동하도록 변경 - 프론트에서는 많은 변화가 진행됨. 핸들러 진행 후 프로필이 아닌 홈화면으로 가도록 변경. 노션과 같이 빈곳을 클릭하면 입력할 수 있는 공간이 생기며, 여기에 내용을 작성하면 저장됨. 내용이 비엇다면 제거되도록 함." />
     <MESSAGE value="ci test" />
@@ -681,7 +688,8 @@
     <MESSAGE value="cd 해보기" />
     <MESSAGE value="cd 해보기-업로드 시간 줄이기" />
     <MESSAGE value="cd 해보기- docker 사용해서 빌드하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd 해보기- docker 사용해서 빌드하기" />
+    <MESSAGE value="cd 해보기- docker 사용해서 빌드하기, git secret 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd 해보기- docker 사용해서 빌드하기, git secret 설정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
