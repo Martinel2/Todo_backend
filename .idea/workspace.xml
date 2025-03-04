@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,14 +293,7 @@
       <workItem from="1740486643555" duration="18660000" />
       <workItem from="1740829081267" duration="7056000" />
       <workItem from="1740985931946" duration="11278000" />
-      <workItem from="1741062123669" duration="2962000" />
-    </task>
-    <task id="LOCAL-00080" summary="OAuth2ServiceTest 에 예외처리 테스트 추가">
-      <created>1740236718140</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1740236718140</updated>
+      <workItem from="1741062123669" duration="3911000" />
     </task>
     <task id="LOCAL-00081" summary="TodoServiceTest에 예외처리 테스트 추가&#10;TodoService 코드에서 예외를 던지도록 하여 TodoController 코드 리팩토링">
       <created>1740243178643</created>
@@ -634,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741062954803</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋">
+      <created>1741078490571</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1741078490571</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,7 +671,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="notion식으로 코드가 작동하도록 변경 - 프론트에서는 많은 변화가 진행됨. 핸들러 진행 후 프로필이 아닌 홈화면으로 가도록 변경. 노션과 같이 빈곳을 클릭하면 입력할 수 있는 공간이 생기며, 여기에 내용을 작성하면 저장됨. 내용이 비엇다면 제거되도록 함." />
     <MESSAGE value="ci test" />
     <MESSAGE value="ci test 결고 pr에 작성하기" />
     <MESSAGE value="ci test 결고 pr에 작성하기 - pr시에도 ci하도록 함" />
@@ -692,7 +695,8 @@
     <MESSAGE value="cd 해보기- docker 사용해서 빌드하기" />
     <MESSAGE value="cd 해보기- docker 사용해서 빌드하기, git secret 설정" />
     <MESSAGE value="cd docker 사용해서 성공시키기" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
