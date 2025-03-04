@@ -176,6 +176,10 @@ jobs:
           # 컨테이너 실행
           docker run -d -p 8080:8080 --name backend-container todo
   
+    - name: Check if Nginx reverse proxy is working
+      run: curl -I http://localhost | grep "HTTP/1.1 200"
+      
+  
 
     #- name: Deploy to EC2 and build
     #  uses: appleboy/ssh-action@master
