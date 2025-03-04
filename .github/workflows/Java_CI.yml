@@ -106,7 +106,7 @@ jobs:
               -e MYSQL_ROOT_PASSWORD=0000 \
               -e MYSQL_DATABASE=todo \
               -e MYSQL_USER=testuser \
-              -e MYSQL_PASSWORD=testpassworD \
+              -e MYSQL_PASSWORD=${{ secrets.MYSQL_PASSWORD }} \
               -p 3306:3306 \
               --restart unless-stopped \
               mysql:8.0
@@ -115,7 +115,7 @@ jobs:
           # MySQL 컨테이너가 정상적으로 실행되는지 확인
           sleep 10
           docker logs mysql-container
-          mysqladmin ping -h 127.0.0.1 -u testuser -ptestpassworD
+          mysqladmin ping -h 127.0.0.1 -u testuser -p${{ secrets.MYSQL_PASSWORD }}
 
     - name: Check if Nginx reverse proxy is working
       run: curl -I http://localhost | grep "HTTP/1.1 200"
