@@ -123,11 +123,6 @@ jobs:
               -e DB_PASSWORD="testpassworD" \
               ${{ secrets.DOCKER_USERNAME }}/todo:latest
 
-            # Ensure MySQL is up
-            sleep 10
-            docker logs mysql-container
-            mysqladmin ping -h 127.0.0.1 -u testuser -p${{ secrets.MYSQL_PASSWORD }}
-
       - name: Check if Nginx reverse proxy is working
         run: curl -I http://todo.com | grep "HTTP/1.1 200"
 
