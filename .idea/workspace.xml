@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋" />
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -284,14 +284,7 @@
       <workItem from="1740486643555" duration="18660000" />
       <workItem from="1740829081267" duration="7056000" />
       <workItem from="1740985931946" duration="11278000" />
-      <workItem from="1741062123669" duration="6184000" />
-    </task>
-    <task id="LOCAL-00083" summary="Todo를 다른  사용자가 고치는 경우 예외를 던지도록 코드를 수정&#10;AccessDeniedException을 핸들링하기 위해 예외처리 방식을 변경&#10;그와 동시에 답변도 일관적으로 할 수 있도록 ResultResponse 클래스를 추가">
-      <created>1740420683216</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1740420683217</updated>
+      <workItem from="1741062123669" duration="6507000" />
     </task>
     <task id="LOCAL-00084" summary="테스트가 h2 데이터베이스를 사용하도록 설정을 변경함&#10;그 후, 테스트를 리팩토링함&#10;TodoIntergrationTest는 아직 수정이 필요">
       <created>1740502426589</created>
@@ -629,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741082339527</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741083349710</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1741083349710</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +662,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="ci test" />
     <MESSAGE value="ci test 결고 pr에 작성하기" />
     <MESSAGE value="ci test 결고 pr에 작성하기 - pr시에도 ci하도록 함" />
     <MESSAGE value="pr되는지 테스트" />
@@ -687,7 +686,8 @@
     <MESSAGE value="cd 해보기- docker 사용해서 빌드하기, git secret 설정" />
     <MESSAGE value="cd docker 사용해서 성공시키기" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
