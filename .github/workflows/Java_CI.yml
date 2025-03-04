@@ -123,8 +123,16 @@ jobs:
               -e DB_PASSWORD="testpassworD" \
               ${{ secrets.DOCKER_USERNAME }}/todo:latest
 
-      - name: Check if Nginx reverse proxy is working
-        run: curl -I http://todo.com | grep "HTTP/1.1 200"
-
+      - name: Add EC2 public IP to /etc/hosts
+        run: |
+          echo "$EC2_PUBLIC_IP todo.com" | sudo tee -a /etc/hosts
+        env:
+          EC2_PUBLIC_IP: ${{ secrets.EC2_PUBLIC_IP }}
+  
+      - name: Test HTTP response
+        run: |
+          curl -I http://todo.com | grep "HTTP/1.1 200"
+      
+      
       - name: Remove private key file
         run: rm -f private_key.pem

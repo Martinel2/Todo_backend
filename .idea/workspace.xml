@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
       <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,21 +286,7 @@
       <workItem from="1740486643555" duration="18660000" />
       <workItem from="1740829081267" duration="7056000" />
       <workItem from="1740985931946" duration="11278000" />
-      <workItem from="1741062123669" duration="11435000" />
-    </task>
-    <task id="LOCAL-00091" summary="push시에는 ci를 진행하지않도록 수정">
-      <created>1740505582390</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1740505582390</updated>
-    </task>
-    <task id="LOCAL-00092" summary="다시 push시에도 ci하도록 수정함">
-      <created>1740508802420</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1740508802420</updated>
+      <workItem from="1741062123669" duration="12047000" />
     </task>
     <task id="LOCAL-00093" summary="다시 push시에도 ci하도록 수정함">
       <created>1740508849094</created>
@@ -632,7 +617,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741087960227</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741088890357</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1741088890357</updated>
+    </task>
+    <task id="LOCAL-00141" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741090019841</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1741090019841</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
