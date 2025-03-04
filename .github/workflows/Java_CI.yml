@@ -40,91 +40,91 @@ jobs:
       with:
         name: Project
         path: build/libs/*.jar
-cd:
-  runs-on: ubuntu-latest
-  needs: ci
+  cd:
+    runs-on: ubuntu-latest
+    needs: ci
 
-  steps:
-    - uses: actions/checkout@v4
+    steps:
+      - uses: actions/checkout@v4
 
-    - name: Download build artifact
-      uses: actions/download-artifact@v4
-      with:
-        name: Project
-        path: ./build/libs
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: Project
+          path: ./build/libs
 
-    # Docker Hub login
-    - name: Login to Docker Hub
-      run: |
-        echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+      # Docker Hub login
+      - name: Login to Docker Hub
+        run: |
+          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
-    # Build and Push Docker Image
-    - name: Build and Push Docker Image
-      run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/todo:latest .
-        docker push ${{ secrets.DOCKER_USERNAME }}/todo:latest
+      # Build and Push Docker Image
+      - name: Build and Push Docker Image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/todo:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/todo:latest
 
-    - name: Create .ssh directory and add EC2 host key
-      run: |
-        mkdir -p ~/.ssh
-        ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+      - name: Create .ssh directory and add EC2 host key
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
 
-    - name: Create private key file
-      run: |
-        echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key.pem
-        chmod 600 private_key.pem
+      - name: Create private key file
+        run: |
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key.pem
+          chmod 600 private_key.pem
 
-    - name: Deploy to EC2 and restart Docker container
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.EC2_HOST }}
-        username: ${{ secrets.EC2_USER }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        script: |
-          cd /home/${{ secrets.EC2_USER }}/project/
+      - name: Deploy to EC2 and restart Docker container
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /home/${{ secrets.EC2_USER }}/project/
 
-          # Stop and remove existing containers
-          docker stop backend-container nginx-container mysql-container || true
-          docker rm backend-container nginx-container mysql-container || true
-          
-          # Pull the latest Docker image
-          docker pull ${{ secrets.DOCKER_USERNAME }}/todo:latest
-          
-          # Start the MySQL container
-          docker run -d --name mysql-container \
-            -e MYSQL_ROOT_PASSWORD=0000 \
-            -e MYSQL_DATABASE=todo \
-            -e MYSQL_USER=testuser \
-            -e MYSQL_PASSWORD=${{ secrets.MYSQL_PASSWORD }} \
-            -p 3306:3306 \
-            --restart unless-stopped \
-            --network backend-network \
-            mysql:8.0
+            # Stop and remove existing containers
+            docker stop backend-container nginx-container mysql-container || true
+            docker rm backend-container nginx-container mysql-container || true
+            
+            # Pull the latest Docker image
+            docker pull ${{ secrets.DOCKER_USERNAME }}/todo:latest
+            
+            # Start the MySQL container
+            docker run -d --name mysql-container \
+              -e MYSQL_ROOT_PASSWORD=0000 \
+              -e MYSQL_DATABASE=todo \
+              -e MYSQL_USER=testuser \
+              -e MYSQL_PASSWORD=${{ secrets.MYSQL_PASSWORD }} \
+              -p 3306:3306 \
+              --restart unless-stopped \
+              --network backend-network \
+              mysql:8.0
 
-          # Start the backend container
-          docker run -d -p 8080:8080 --name backend-container \
-            --restart unless-stopped \
-            --network backend-network \
-            -e SPRING_PROFILES_ACTIVE=prod \
-            -e DATABASE_URL="jdbc:mysql://mysql-container:3306/todo" \
-            -e DB_USERNAME="testuser" \
-            -e DB_PASSWORD="testpassworD" \
-            ${{ secrets.DOCKER_USERNAME }}/todo:latest
+            # Start the backend container
+            docker run -d -p 8080:8080 --name backend-container \
+              --restart unless-stopped \
+              --network backend-network \
+              -e SPRING_PROFILES_ACTIVE=prod \
+              -e DATABASE_URL="jdbc:mysql://mysql-container:3306/todo" \
+              -e DB_USERNAME="testuser" \
+              -e DB_PASSWORD="testpassworD" \
+              ${{ secrets.DOCKER_USERNAME }}/todo:latest
 
-          # Start the Nginx container
-          docker run -d -p 80:80 --name nginx-container \
-            --restart unless-stopped \
-            --network backend-network \
-            -v /home/${{ secrets.EC2_USER }}/project/nginx.conf:/etc/nginx/nginx.conf \
-            nginx:latest
+            # Start the Nginx container
+            docker run -d -p 80:80 --name nginx-container \
+              --restart unless-stopped \
+              --network backend-network \
+              -v /home/${{ secrets.EC2_USER }}/project/nginx.conf:/etc/nginx/nginx.conf \
+              nginx:latest
 
-          # Ensure MySQL is up
-          sleep 10
-          docker logs mysql-container
-          mysqladmin ping -h 127.0.0.1 -u testuser -p${{ secrets.MYSQL_PASSWORD }}
+            # Ensure MySQL is up
+            sleep 10
+            docker logs mysql-container
+            mysqladmin ping -h 127.0.0.1 -u testuser -p${{ secrets.MYSQL_PASSWORD }}
 
-    - name: Check if Nginx reverse proxy is working
-      run: curl -I http://todo.com | grep "HTTP/1.1 200"
+      - name: Check if Nginx reverse proxy is working
+        run: curl -I http://todo.com | grep "HTTP/1.1 200"
 
-    - name: Remove private key file
-      run: rm -f private_key.pem
+      - name: Remove private key file
+        run: rm -f private_key.pem
