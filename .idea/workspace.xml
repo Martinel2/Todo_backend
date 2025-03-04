@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,7 @@
       <recent name="C:\Users\a\Documents\project_Todo\todo\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TodoControllerTest">
+  <component name="RunManager" selected="Spring Boot.TodoApplication (2)">
     <configuration name="TodoControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -286,105 +286,7 @@
       <workItem from="1740486643555" duration="18660000" />
       <workItem from="1740829081267" duration="7056000" />
       <workItem from="1740985931946" duration="11278000" />
-      <workItem from="1741062123669" duration="814000" />
-    </task>
-    <task id="LOCAL-00079" summary="OAuth2ServiceUnitTest 에 예외처리 테스트 추가">
-      <created>1740236526510</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1740236526511</updated>
-    </task>
-    <task id="LOCAL-00080" summary="OAuth2ServiceTest 에 예외처리 테스트 추가">
-      <created>1740236718140</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1740236718140</updated>
-    </task>
-    <task id="LOCAL-00081" summary="TodoServiceTest에 예외처리 테스트 추가&#10;TodoService 코드에서 예외를 던지도록 하여 TodoController 코드 리팩토링">
-      <created>1740243178643</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1740243178643</updated>
-    </task>
-    <task id="LOCAL-00082" summary="TodoService 예외처리 테스트 클래스를 추가하도록 함&#10;TodoService 코드에서 예외를 던지도록 하여 TodoController 코드 리팩토링">
-      <created>1740283434278</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1740283434278</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Todo를 다른  사용자가 고치는 경우 예외를 던지도록 코드를 수정&#10;AccessDeniedException을 핸들링하기 위해 예외처리 방식을 변경&#10;그와 동시에 답변도 일관적으로 할 수 있도록 ResultResponse 클래스를 추가">
-      <created>1740420683216</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1740420683217</updated>
-    </task>
-    <task id="LOCAL-00084" summary="테스트가 h2 데이터베이스를 사용하도록 설정을 변경함&#10;그 후, 테스트를 리팩토링함&#10;TodoIntergrationTest는 아직 수정이 필요">
-      <created>1740502426589</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1740502426590</updated>
-    </task>
-    <task id="LOCAL-00085" summary="TodoIntergrationTest 수정">
-      <created>1740502827482</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1740502827482</updated>
-    </task>
-    <task id="LOCAL-00086" summary="ci환경에서도 h2를 사용하도록 수정">
-      <created>1740503036792</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1740503036793</updated>
-    </task>
-    <task id="LOCAL-00087" summary="ci환경에서도 h2를 사용하도록 수정">
-      <created>1740503115159</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1740503115159</updated>
-    </task>
-    <task id="LOCAL-00088" summary="TodoControllerTest를 리팩토링함">
-      <created>1740504298075</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1740504298075</updated>
-    </task>
-    <task id="LOCAL-00089" summary="TodoControllerTest를 리팩토링함">
-      <created>1740504657847</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1740504657847</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Unversioned Files">
-      <created>1740505326886</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1740505326886</updated>
-    </task>
-    <task id="LOCAL-00091" summary="push시에는 ci를 진행하지않도록 수정">
-      <created>1740505582390</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1740505582390</updated>
-    </task>
-    <task id="LOCAL-00092" summary="다시 push시에도 ci하도록 수정함">
-      <created>1740508802420</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1740508802420</updated>
+      <workItem from="1741062123669" duration="12047000" />
     </task>
     <task id="LOCAL-00093" summary="다시 push시에도 ci하도록 수정함">
       <created>1740508849094</created>
@@ -631,7 +533,105 @@
       <option name="project" value="LOCAL" />
       <updated>1741015675993</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="cd docker 사용해서 성공시키기">
+      <created>1741062954802</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1741062954803</updated>
+    </task>
+    <task id="LOCAL-00129" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋">
+      <created>1741078490571</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1741078490571</updated>
+    </task>
+    <task id="LOCAL-00130" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋">
+      <created>1741080112212</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1741080112212</updated>
+    </task>
+    <task id="LOCAL-00131" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋">
+      <created>1741082339527</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1741082339527</updated>
+    </task>
+    <task id="LOCAL-00132" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741083349710</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1741083349710</updated>
+    </task>
+    <task id="LOCAL-00133" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741083900537</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1741083900537</updated>
+    </task>
+    <task id="LOCAL-00134" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741084780347</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1741084780347</updated>
+    </task>
+    <task id="LOCAL-00135" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741084840832</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1741084840832</updated>
+    </task>
+    <task id="LOCAL-00136" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741085523590</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1741085523590</updated>
+    </task>
+    <task id="LOCAL-00137" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741086761811</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1741086761811</updated>
+    </task>
+    <task id="LOCAL-00138" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741087644316</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1741087644316</updated>
+    </task>
+    <task id="LOCAL-00139" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741087960227</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1741087960227</updated>
+    </task>
+    <task id="LOCAL-00140" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741088890357</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1741088890357</updated>
+    </task>
+    <task id="LOCAL-00141" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741090019841</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1741090019841</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,8 +664,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="notion식으로 코드가 작동하도록 변경 - 프론트에서는 많은 변화가 진행됨. 핸들러 진행 후 프로필이 아닌 홈화면으로 가도록 변경. 노션과 같이 빈곳을 클릭하면 입력할 수 있는 공간이 생기며, 여기에 내용을 작성하면 저장됨. 내용이 비엇다면 제거되도록 함." />
-    <MESSAGE value="ci test" />
     <MESSAGE value="ci test 결고 pr에 작성하기" />
     <MESSAGE value="ci test 결고 pr에 작성하기 - pr시에도 ci하도록 함" />
     <MESSAGE value="pr되는지 테스트" />
@@ -689,7 +687,9 @@
     <MESSAGE value="cd 해보기- docker 사용해서 빌드하기" />
     <MESSAGE value="cd 해보기- docker 사용해서 빌드하기, git secret 설정" />
     <MESSAGE value="cd docker 사용해서 성공시키기" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
