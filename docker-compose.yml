@@ -34,7 +34,7 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf # Nginx 설정 파일을 매핑
     networks:
-      - backend_network
+      - backend-network
 
 networks:
   backend-network:
