@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -284,14 +287,7 @@
       <workItem from="1740486643555" duration="18660000" />
       <workItem from="1740829081267" duration="7056000" />
       <workItem from="1740985931946" duration="11278000" />
-      <workItem from="1741062123669" duration="10450000" />
-    </task>
-    <task id="LOCAL-00090" summary="Unversioned Files">
-      <created>1740505326886</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1740505326886</updated>
+      <workItem from="1741062123669" duration="11435000" />
     </task>
     <task id="LOCAL-00091" summary="push시에는 ci를 진행하지않도록 수정">
       <created>1740505582390</created>
@@ -629,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741087644316</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+      <created>1741087960227</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1741087960227</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
