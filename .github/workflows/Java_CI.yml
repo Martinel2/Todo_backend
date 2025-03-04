@@ -81,6 +81,19 @@ jobs:
     runs-on: ubuntu-latest
     needs: ci # ➜ ci가 성공해야 cd 실행
 
+    # MySQL 서비스 설정
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: 0000  # root 비밀번호 설정
+          MYSQL_DATABASE: todo  # 사용할 데이터베이스
+          MYSQL_USER: testuser  # 일반 사용자 생성
+          MYSQL_PASSWORD: testpassworD  # 일반 사용자 비밀번호
+        ports:
+          - 3306:3306  # 포트 매핑
+        options: --health-cmd="mysqladmin ping -h 127.0.0.1 --silent" --health-interval=10s --health-timeout=5s --health-retries=3
+
     steps:
     - uses: actions/checkout@v4
 
@@ -89,6 +102,19 @@ jobs:
       with:
         name: Project
         path: ./build/libs
+
+
+    # 충분한 대기 시간을 추가하여 MySQL 서버가 준비되도록 함
+    - name: Wait for MySQL to be ready
+      run: sleep 10
+
+    - name: Check MySQL connection
+      run: |
+        mysql -h 127.0.0.1 -u testuser -ptestpassworD  # 'mysql' 대신 '127.0.0.1' 사용
+
+    # MySQL 포트 확인
+    - name: Check MySQL port 3306
+      run: telnet localhost 3306
 
   #출처 https://min9yu98.tistory.com/18  
 
