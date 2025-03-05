@@ -289,14 +289,7 @@
       <workItem from="1741062123669" duration="13267000" />
       <workItem from="1741150777135" duration="7238000" />
       <workItem from="1741166963630" duration="7000" />
-      <workItem from="1741169278514" duration="301000" />
-    </task>
-    <task id="LOCAL-00108" summary="cd 해보기">
-      <created>1740838637724</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1740838637724</updated>
+      <workItem from="1741169278514" duration="603000" />
     </task>
     <task id="LOCAL-00109" summary="cd 해보기-업로드 시간 줄이기">
       <created>1740838794942</created>
@@ -634,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741169390116</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="cd docker 사용해서 성공시키기 - docker compose 사용해보기">
+      <created>1741169587337</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1741169587337</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
