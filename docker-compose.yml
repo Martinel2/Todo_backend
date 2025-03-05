@@ -5,26 +5,28 @@ services:
     image: mysql:8.0
     container_name: mysql-container
     environment:
-      MYSQL_ROOT_PASSWORD: 0000
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: todo
       MYSQL_USER: testuser
-      MYSQL_PASSWORD: testpassworD
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - "3306:3306"
     networks:
       - backend-network
 
   backend:
-    build:
-      context: ./project
-      dockerfile: Dockerfile
+    image: ${DOCKER_USERNAME}/todo:latest
     container_name: backend-container
-    ports:
-      - "8080:8080"
-    depends_on:
-      - mysql
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - DATABASE_URL=jdbc:mysql://mysql-container:3306/todo
+      - DB_USERNAME=testuser
+      - DB_PASSWORD=${MYSQL_PASSWORD}
     networks:
       - backend-network
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
 
   nginx:
     image: nginx:latest

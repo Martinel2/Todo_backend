@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 폴더 경로 수정" />
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 로컬에서 도메인 등록">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -285,14 +289,7 @@
       <workItem from="1740829081267" duration="7056000" />
       <workItem from="1740985931946" duration="11278000" />
       <workItem from="1741062123669" duration="13267000" />
-      <workItem from="1741150777135" duration="6034000" />
-    </task>
-    <task id="LOCAL-00105" summary="cd 해보기">
-      <created>1740836850840</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1740836850840</updated>
+      <workItem from="1741150777135" duration="7012000" />
     </task>
     <task id="LOCAL-00106" summary="cd 해보기">
       <created>1740837136435</created>
@@ -630,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741160811163</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="cd docker 사용해서 성공시키기 - 로컬에서 도메인 등록">
+      <created>1741162889618</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1741162889618</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +667,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="리포지토리,서비스,컨트롤러에 대한 모든 단위 기능테스트 코드 작성 완료" />
     <MESSAGE value="OAuth2ServiceUnitTest 에 예외처리 테스트 추가" />
     <MESSAGE value="OAuth2ServiceTest 에 예외처리 테스트 추가" />
     <MESSAGE value="TodoServiceTest에 예외처리 테스트 추가&#10;TodoService 코드에서 예외를 던지도록 하여 TodoController 코드 리팩토링" />
@@ -688,7 +691,8 @@
     <MESSAGE value="cd docker 사용해서 성공시키기 - 포트를 잡아먹고있어서 종료후 다시 시도" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 재생성 후에 폴더가 삭제되어 dockerfile이 없었던 것 같음" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 폴더 경로 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 폴더 경로 수정" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 로컬에서 도메인 등록" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 로컬에서 도메인 등록" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
