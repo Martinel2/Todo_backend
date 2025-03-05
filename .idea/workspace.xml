@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - todo.com 인식관련 문제인지 확인하기">
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -287,14 +287,7 @@
       <workItem from="1740829081267" duration="7056000" />
       <workItem from="1740985931946" duration="11278000" />
       <workItem from="1741062123669" duration="13267000" />
-      <workItem from="1741150777135" duration="618000" />
-    </task>
-    <task id="LOCAL-00095" summary="cd 해보기">
-      <created>1740829566110</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1740829566110</updated>
+      <workItem from="1741150777135" duration="651000" />
     </task>
     <task id="LOCAL-00096" summary="cd 해보기">
       <created>1740829757750</created>
@@ -632,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741150793645</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
+      <created>1741153071702</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1741153071702</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +665,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="ci test 결고 pr에 작성하기 - pr시에도 ci하도록 함" />
     <MESSAGE value="pr되는지 테스트" />
     <MESSAGE value="OAuth2Service 를 테스트하는 코드 작성 - 기능 테스트" />
     <MESSAGE value="CustomUserDetailsService를 테스트하는 코드 작성 - 기능 테스트" />
@@ -690,7 +689,8 @@
     <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - todo.com 인식관련 문제인지 확인하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - todo.com 인식관련 문제인지 확인하기" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
