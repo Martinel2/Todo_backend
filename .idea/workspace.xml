@@ -287,14 +287,7 @@
       <workItem from="1740829081267" duration="7056000" />
       <workItem from="1740985931946" duration="11278000" />
       <workItem from="1741062123669" duration="13267000" />
-      <workItem from="1741150777135" duration="1612000" />
-    </task>
-    <task id="LOCAL-00098" summary="cd 해보기">
-      <created>1740830286977</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1740830286977</updated>
+      <workItem from="1741150777135" duration="2216000" />
     </task>
     <task id="LOCAL-00099" summary="cd 해보기">
       <created>1740830908399</created>
@@ -632,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741154801517</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
+      <created>1741156117746</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1741156117746</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
