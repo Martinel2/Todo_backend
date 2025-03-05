@@ -74,6 +74,12 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key.pem
           chmod 600 private_key.pem
 
+      - name: Upload project files to EC2
+        run: |
+          rsync -avz --progress --exclude 'node_modules' \
+          -e "ssh -i private_key.pem" ./todo/ \
+          ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/home/${{ secrets.EC2_USER }}/project/
+
       #CI는 개별 환경이므로 로컬에서 설정을 했더라도 다시 설정을 해주는게 좋음
       - name: Deploy to EC2 and restart Docker container
         uses: appleboy/ssh-action@master
