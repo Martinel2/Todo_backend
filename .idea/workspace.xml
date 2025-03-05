@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 재생성 후에 폴더가 삭제되어 dockerfile이 없었던 것 같음">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 폴더 경로 수정" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -287,14 +285,7 @@
       <workItem from="1740829081267" duration="7056000" />
       <workItem from="1740985931946" duration="11278000" />
       <workItem from="1741062123669" duration="13267000" />
-      <workItem from="1741150777135" duration="5399000" />
-    </task>
-    <task id="LOCAL-00104" summary="cd 해보기">
-      <created>1740836653932</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1740836653932</updated>
+      <workItem from="1741150777135" duration="6034000" />
     </task>
     <task id="LOCAL-00105" summary="cd 해보기">
       <created>1740836850840</created>
@@ -632,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741160060681</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="cd docker 사용해서 성공시키기 - 폴더 경로 수정">
+      <created>1741160811163</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1741160811163</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +663,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="CustomUserDetailsService를 테스트하는 코드 작성 - 기능 테스트" />
     <MESSAGE value="리포지토리,서비스,컨트롤러에 대한 모든 단위 기능테스트 코드 작성 완료" />
     <MESSAGE value="OAuth2ServiceUnitTest 에 예외처리 테스트 추가" />
     <MESSAGE value="OAuth2ServiceTest 에 예외처리 테스트 추가" />
@@ -690,7 +687,8 @@
     <MESSAGE value="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 포트를 잡아먹고있어서 종료후 다시 시도" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 재생성 후에 폴더가 삭제되어 dockerfile이 없었던 것 같음" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 재생성 후에 폴더가 삭제되어 dockerfile이 없었던 것 같음" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 폴더 경로 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 폴더 경로 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
