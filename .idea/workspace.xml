@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - todo.com 인식관련 문제인지 확인하기">
       <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,14 +287,7 @@
       <workItem from="1740486643555" duration="18660000" />
       <workItem from="1740829081267" duration="7056000" />
       <workItem from="1740985931946" duration="11278000" />
-      <workItem from="1741062123669" duration="12047000" />
-    </task>
-    <task id="LOCAL-00093" summary="다시 push시에도 ci하도록 수정함">
-      <created>1740508849094</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1740508849094</updated>
+      <workItem from="1741062123669" duration="13267000" />
     </task>
     <task id="LOCAL-00094" summary="cd 해보기">
       <created>1740829120944</created>
@@ -631,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741090019841</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="cd docker 사용해서 성공시키기 - todo.com 인식관련 문제인지 확인하기">
+      <created>1741091278364</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1741091278364</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +665,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="ci test 결고 pr에 작성하기" />
     <MESSAGE value="ci test 결고 pr에 작성하기 - pr시에도 ci하도록 함" />
     <MESSAGE value="pr되는지 테스트" />
     <MESSAGE value="OAuth2Service 를 테스트하는 코드 작성 - 기능 테스트" />
@@ -689,7 +689,8 @@
     <MESSAGE value="cd docker 사용해서 성공시키기" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - todo.com 인식관련 문제인지 확인하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - todo.com 인식관련 문제인지 확인하기" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
