@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - docker compose 사용해보기" />
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - docker compose 사용해보기, host 주소 변경">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -289,13 +291,7 @@
       <workItem from="1741166963630" duration="7000" />
       <workItem from="1741169278514" duration="4168000" />
       <workItem from="1741237708511" duration="46000" />
-    </task>
-    <task id="LOCAL-00112" summary="cd 해보기-업로드 시간 줄이기">
-      <created>1740839684425</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1740839684425</updated>
+      <workItem from="1741238344817" duration="1223000" />
     </task>
     <task id="LOCAL-00113" summary="cd 해보기- docker 사용해서 빌드하기">
       <created>1741005449955</created>
@@ -633,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741237740853</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="cd docker 사용해서 성공시키기 - docker compose 사용해보기, host 주소 변경">
+      <created>1741238374187</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1741238374190</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,7 +669,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="OAuth2ServiceTest 에 예외처리 테스트 추가" />
     <MESSAGE value="TodoServiceTest에 예외처리 테스트 추가&#10;TodoService 코드에서 예외를 던지도록 하여 TodoController 코드 리팩토링" />
     <MESSAGE value="TodoService 예외처리 테스트 클래스를 추가하도록 함&#10;TodoService 코드에서 예외를 던지도록 하여 TodoController 코드 리팩토링" />
     <MESSAGE value="Todo를 다른  사용자가 고치는 경우 예외를 던지도록 코드를 수정&#10;AccessDeniedException을 핸들링하기 위해 예외처리 방식을 변경&#10;그와 동시에 답변도 일관적으로 할 수 있도록 ResultResponse 클래스를 추가" />
@@ -691,7 +693,8 @@
     <MESSAGE value="cd docker 사용해서 성공시키기 - 폴더 경로 수정" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 로컬에서 도메인 등록" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - docker compose 사용해보기" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - docker compose 사용해보기" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - docker compose 사용해보기, host 주소 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - docker compose 사용해보기, host 주소 변경" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
