@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - docker compose 사용해보기, host 주소 변경">
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 이미 켜져있는 포트가 없음을 확인 후 커밋. 이 커밋에서  오류가 난다면 yml을 통한 compose과정에서 잘못된 빌드를 수행한 것">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -291,14 +291,7 @@
       <workItem from="1741166963630" duration="7000" />
       <workItem from="1741169278514" duration="4168000" />
       <workItem from="1741237708511" duration="46000" />
-      <workItem from="1741238344817" duration="1223000" />
-    </task>
-    <task id="LOCAL-00113" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741005449955</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1741005449957</updated>
+      <workItem from="1741238344817" duration="2500000" />
     </task>
     <task id="LOCAL-00114" summary="cd 해보기- docker 사용해서 빌드하기">
       <created>1741005852709</created>
@@ -636,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741238374190</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="cd docker 사용해서 성공시키기 - 이미 켜져있는 포트가 없음을 확인 후 커밋. 이 커밋에서  오류가 난다면 yml을 통한 compose과정에서 잘못된 빌드를 수행한 것">
+      <created>1741246086250</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1741246086251</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,7 +669,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="TodoServiceTest에 예외처리 테스트 추가&#10;TodoService 코드에서 예외를 던지도록 하여 TodoController 코드 리팩토링" />
     <MESSAGE value="TodoService 예외처리 테스트 클래스를 추가하도록 함&#10;TodoService 코드에서 예외를 던지도록 하여 TodoController 코드 리팩토링" />
     <MESSAGE value="Todo를 다른  사용자가 고치는 경우 예외를 던지도록 코드를 수정&#10;AccessDeniedException을 핸들링하기 위해 예외처리 방식을 변경&#10;그와 동시에 답변도 일관적으로 할 수 있도록 ResultResponse 클래스를 추가" />
     <MESSAGE value="테스트가 h2 데이터베이스를 사용하도록 설정을 변경함&#10;그 후, 테스트를 리팩토링함&#10;TodoIntergrationTest는 아직 수정이 필요" />
@@ -694,7 +693,8 @@
     <MESSAGE value="cd docker 사용해서 성공시키기 - 로컬에서 도메인 등록" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - docker compose 사용해보기" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - docker compose 사용해보기, host 주소 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - docker compose 사용해보기, host 주소 변경" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 이미 켜져있는 포트가 없음을 확인 후 커밋. 이 커밋에서  오류가 난다면 yml을 통한 compose과정에서 잘못된 빌드를 수행한 것" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 이미 켜져있는 포트가 없음을 확인 후 커밋. 이 커밋에서  오류가 난다면 yml을 통한 compose과정에서 잘못된 빌드를 수행한 것" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
