@@ -94,7 +94,7 @@ jobs:
             echo "MYSQL_PASSWORD=${{ secrets.MYSQL_PASSWORD }}" >> .env
             echo "DOCKER_USERNAME=${{ secrets.DOCKER_USERNAME }}" >> .env
 
-            //sudo aa-remove-unknown
+            #sudo aa-remove-unknown
 
             # Stop and remove existing containers
             docker-compose down || true
