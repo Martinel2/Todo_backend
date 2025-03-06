@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - docker compose 사용해보기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,14 +289,7 @@
       <workItem from="1741062123669" duration="13267000" />
       <workItem from="1741150777135" duration="7238000" />
       <workItem from="1741166963630" duration="7000" />
-      <workItem from="1741169278514" duration="1566000" />
-    </task>
-    <task id="LOCAL-00110" summary="cd 해보기-업로드 시간 줄이기">
-      <created>1740838912195</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1740838912195</updated>
+      <workItem from="1741169278514" duration="4168000" />
     </task>
     <task id="LOCAL-00111" summary="cd 해보기-업로드 시간 줄이기">
       <created>1740839173550</created>
@@ -635,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741169937170</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="cd docker 사용해서 성공시키기 - docker compose 사용해보기">
+      <created>1741171055041</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1741171055041</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
