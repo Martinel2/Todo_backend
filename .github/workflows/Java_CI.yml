@@ -113,7 +113,7 @@ jobs:
       
       - name: Test HTTP response
         run: |
-          curl --max-time 30 -I http://todo.com | grep "HTTP/1.1 200"        
+          curl --max-time 30 -I http://todo | grep "HTTP/1.1 200"        
       
       
       - name: Remove private key file

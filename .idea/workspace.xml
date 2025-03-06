@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 실험해보기" />
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 실험해보기">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -289,14 +292,7 @@
       <workItem from="1741166963630" duration="7000" />
       <workItem from="1741169278514" duration="4168000" />
       <workItem from="1741237708511" duration="46000" />
-      <workItem from="1741238344817" duration="5010000" />
-    </task>
-    <task id="LOCAL-00119" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741010572563</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1741010572563</updated>
+      <workItem from="1741238344817" duration="7788000" />
     </task>
     <task id="LOCAL-00120" summary="cd 해보기- docker 사용해서 빌드하기">
       <created>1741010903016</created>
@@ -634,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741263605694</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="cd docker 사용해서 성공시키기 - 실험해보기">
+      <created>1741264973880</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1741264973880</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
