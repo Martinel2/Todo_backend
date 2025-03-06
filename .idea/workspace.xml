@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 이미 켜져있는 포트가 없음을 확인 후 커밋. 이 커밋에서  오류가 난다면 yml을 통한 compose과정에서 잘못된 빌드를 수행한 것">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,14 +292,7 @@
       <workItem from="1741166963630" duration="7000" />
       <workItem from="1741169278514" duration="4168000" />
       <workItem from="1741237708511" duration="46000" />
-      <workItem from="1741238344817" duration="2500000" />
-    </task>
-    <task id="LOCAL-00114" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741005852709</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1741005852709</updated>
+      <workItem from="1741238344817" duration="3426000" />
     </task>
     <task id="LOCAL-00115" summary="cd 해보기- docker 사용해서 빌드하기">
       <created>1741006715922</created>
@@ -636,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741246086251</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="cd docker 사용해서 성공시키기 - 이미 켜져있는 포트가 없음을 확인 후 커밋. 이 커밋에서  오류가 난다면 yml을 통한 compose과정에서 잘못된 빌드를 수행한 것">
+      <created>1741254566428</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1741254566429</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
