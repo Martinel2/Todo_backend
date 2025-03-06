@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - docker compose 사용해보기">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - docker compose 사용해보기" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -290,13 +288,7 @@
       <workItem from="1741150777135" duration="7238000" />
       <workItem from="1741166963630" duration="7000" />
       <workItem from="1741169278514" duration="4168000" />
-    </task>
-    <task id="LOCAL-00111" summary="cd 해보기-업로드 시간 줄이기">
-      <created>1740839173550</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1740839173550</updated>
+      <workItem from="1741237708511" duration="46000" />
     </task>
     <task id="LOCAL-00112" summary="cd 해보기-업로드 시간 줄이기">
       <created>1740839684425</created>
@@ -634,7 +626,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741171055041</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="cd docker 사용해서 성공시키기 - docker compose 사용해보기">
+      <created>1741237740853</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1741237740853</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
