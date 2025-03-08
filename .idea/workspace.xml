@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기" />
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기(docker 재설치)">
+      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -294,14 +297,7 @@
       <workItem from="1741326088316" duration="219000" />
       <workItem from="1741326732708" duration="215000" />
       <workItem from="1741340033076" duration="927000" />
-      <workItem from="1741418555317" duration="1097000" />
-    </task>
-    <task id="LOCAL-00122" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741012574316</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1741012574316</updated>
+      <workItem from="1741418555317" duration="3048000" />
     </task>
     <task id="LOCAL-00123" summary="cd 해보기- docker 사용해서 빌드하기">
       <created>1741013846374</created>
@@ -639,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741419064851</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기(docker 재설치)">
+      <created>1741419804099</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1741419804099</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,7 +675,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="TodoIntergrationTest 수정" />
     <MESSAGE value="ci환경에서도 h2를 사용하도록 수정" />
     <MESSAGE value="TodoControllerTest를 리팩토링함" />
     <MESSAGE value="Unversioned Files" />
@@ -697,7 +699,8 @@
     <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기-블로그의 conf파일 코드 참고" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기(docker 재설치)" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기(docker 재설치)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
