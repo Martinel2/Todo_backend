@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,14 +299,7 @@
       <workItem from="1741326088316" duration="219000" />
       <workItem from="1741326732708" duration="215000" />
       <workItem from="1741340033076" duration="927000" />
-      <workItem from="1741418555317" duration="13117000" />
-    </task>
-    <task id="LOCAL-00127" summary="cd docker 사용해서 성공시키기">
-      <created>1741015675993</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1741015675993</updated>
+      <workItem from="1741418555317" duration="13824000" />
     </task>
     <task id="LOCAL-00128" summary="cd docker 사용해서 성공시키기">
       <created>1741062954802</created>
@@ -643,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741443771071</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 수정">
+      <created>1741445945453</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1741445945453</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
