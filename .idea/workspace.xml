@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 실험해보기">
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 실험해보기-블로그의 conf파일 코드 참고">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,14 +296,12 @@
       <workItem from="1741166963630" duration="7000" />
       <workItem from="1741169278514" duration="4168000" />
       <workItem from="1741237708511" duration="46000" />
-      <workItem from="1741238344817" duration="7788000" />
-    </task>
-    <task id="LOCAL-00120" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741010903016</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1741010903016</updated>
+      <workItem from="1741238344817" duration="8709000" />
+      <workItem from="1741325430071" duration="19000" />
+      <workItem from="1741326088316" duration="219000" />
+      <workItem from="1741326732708" duration="215000" />
+      <workItem from="1741340033076" duration="927000" />
+      <workItem from="1741418555317" duration="385000" />
     </task>
     <task id="LOCAL-00121" summary="cd 해보기- docker 사용해서 빌드하기">
       <created>1741011090752</created>
@@ -637,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741264973880</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="cd docker 사용해서 성공시키기 - 실험해보기-블로그의 conf파일 코드 참고">
+      <created>1741271019856</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1741271019856</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +679,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Todo를 다른  사용자가 고치는 경우 예외를 던지도록 코드를 수정&#10;AccessDeniedException을 핸들링하기 위해 예외처리 방식을 변경&#10;그와 동시에 답변도 일관적으로 할 수 있도록 ResultResponse 클래스를 추가" />
     <MESSAGE value="테스트가 h2 데이터베이스를 사용하도록 설정을 변경함&#10;그 후, 테스트를 리팩토링함&#10;TodoIntergrationTest는 아직 수정이 필요" />
     <MESSAGE value="TodoIntergrationTest 수정" />
     <MESSAGE value="ci환경에서도 h2를 사용하도록 수정" />
@@ -695,7 +703,8 @@
     <MESSAGE value="cd docker 사용해서 성공시키기 - docker compose 사용해보기, host 주소 변경" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 이미 켜져있는 포트가 없음을 확인 후 커밋. 이 커밋에서  오류가 난다면 yml을 통한 compose과정에서 잘못된 빌드를 수행한 것" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 실험해보기" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기-블로그의 conf파일 코드 참고" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 실험해보기-블로그의 conf파일 코드 참고" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
