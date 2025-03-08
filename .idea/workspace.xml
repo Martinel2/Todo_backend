@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 실험해보기- nginx.conf 직접 프로젝트파일에 생성">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -299,21 +298,7 @@
       <workItem from="1741326088316" duration="219000" />
       <workItem from="1741326732708" duration="215000" />
       <workItem from="1741340033076" duration="927000" />
-      <workItem from="1741418555317" duration="12299000" />
-    </task>
-    <task id="LOCAL-00125" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741014099908</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1741014099908</updated>
-    </task>
-    <task id="LOCAL-00126" summary="cd 해보기- docker 사용해서 빌드하기, git secret 설정">
-      <created>1741014609678</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1741014609678</updated>
+      <workItem from="1741418555317" duration="13117000" />
     </task>
     <task id="LOCAL-00127" summary="cd docker 사용해서 성공시키기">
       <created>1741015675993</created>
@@ -644,7 +629,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741438634489</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="cd docker 사용해서 성공시키기 - 실험해보기- nginx.conf 직접 프로젝트파일에 생성">
+      <created>1741443614477</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1741443614477</updated>
+    </task>
+    <task id="LOCAL-00175" summary="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 수정">
+      <created>1741443771071</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1741443771071</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,7 +676,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="TodoControllerTest를 리팩토링함" />
     <MESSAGE value="Unversioned Files" />
     <MESSAGE value="push시에는 ci를 진행하지않도록 수정" />
     <MESSAGE value="다시 push시에도 ci하도록 수정함" />
@@ -702,7 +700,8 @@
     <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기(docker 재설치)" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- nginx.conf 직접 프로젝트파일에 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 실험해보기- nginx.conf 직접 프로젝트파일에 생성" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
