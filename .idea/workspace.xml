@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 실험해보기- mysql compose 설정 수정">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,14 +300,7 @@
       <workItem from="1741326732708" duration="215000" />
       <workItem from="1741340033076" duration="927000" />
       <workItem from="1741418555317" duration="15810000" />
-      <workItem from="1741497724657" duration="3254000" />
-    </task>
-    <task id="LOCAL-00131" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋">
-      <created>1741082339527</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1741082339527</updated>
+      <workItem from="1741497724657" duration="4016000" />
     </task>
     <task id="LOCAL-00132" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
       <created>1741083349710</created>
@@ -644,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741503576955</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="cd docker 사용해서 성공시키기 - 실험해보기- mysql compose 설정 수정">
+      <created>1741504315776</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1741504315776</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

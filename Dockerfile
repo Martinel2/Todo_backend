@@ -9,7 +9,7 @@ COPY . .
 
 #ENV SPRING_PROFILES_ACTIVE=prod
 # 빌드된 JAR 파일을 컨테이너로 복사
-ARG JAR_FILE=build/libs/*.jar
+ARG JAR_FILE=build/libs/todo-0.0.1-SNAPSHOT.jar
 RUN mv ${JAR_FILE} app.jar
 
 # 컨테이너가 실행될 때 실행될 명령어 지정
