@@ -33,7 +33,7 @@ jobs:
         DATABASE_URL: "jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1"
         DB_USERNAME: "sa"
         DB_PASSWORD: "password"
-      run: ./gradlew build
+      run: ./gradlew clean build
 
     - name: Upload build artifact
       uses: actions/upload-artifact@v4
