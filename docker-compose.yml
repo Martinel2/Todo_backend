@@ -40,7 +40,7 @@ services:
 
   nginx:
     container_name: nginx
-    image: nginx:1.21.5-alpine
+    image: nginx
     depends_on:
       - mysql
       - backend
