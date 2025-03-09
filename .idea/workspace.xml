@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 실험해보기- mysql compose 설정 수정">
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - 실험해보기- nginx 설정 수정">
       <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,14 +300,7 @@
       <workItem from="1741326732708" duration="215000" />
       <workItem from="1741340033076" duration="927000" />
       <workItem from="1741418555317" duration="15810000" />
-      <workItem from="1741497724657" duration="6544000" />
-    </task>
-    <task id="LOCAL-00133" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741083900537</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1741083900537</updated>
+      <workItem from="1741497724657" duration="7344000" />
     </task>
     <task id="LOCAL-00134" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
       <created>1741084780347</created>
@@ -646,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741505011983</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="cd docker 사용해서 성공시키기 - 실험해보기- nginx 설정 수정">
+      <created>1741520050576</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1741520050577</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -679,7 +678,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="다시 push시에도 ci하도록 수정함" />
     <MESSAGE value="cd 해보기" />
     <MESSAGE value="cd 해보기-업로드 시간 줄이기" />
     <MESSAGE value="cd 해보기- docker 사용해서 빌드하기" />
@@ -704,7 +702,8 @@
     <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 수정" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- nginx 수정" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- mysql compose 설정 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 실험해보기- mysql compose 설정 수정" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- nginx 설정 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - 실험해보기- nginx 설정 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
