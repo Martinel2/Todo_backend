@@ -1,6 +1,8 @@
 # 최신 17-jdk-alpine 이미지로부터 시작
 FROM openjdk:17-jdk-slim
 
+EXPOSE 8080
+
 # 작업 디렉토리를 /app으로 설정
 WORKDIR /app
 
