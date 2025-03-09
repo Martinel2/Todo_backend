@@ -2,7 +2,8 @@ version: '3.8'
 
 services:
   mysql:
-    image: mysql:8.0
+    container_name: mysql
+    image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: todo
@@ -20,12 +21,13 @@ services:
       - backend-network
 
   backend:
+    container_name: backend
     depends_on:
       - mysql  # ✅ MySQL이 먼저 실행된 후 backend 시작
     environment:
       SPRING_DATASOURCE_DRIVER_CLASS_NAME: com.mysql.cj.jdbc.Driver
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/todo?useSSL=false&allowPublicKeyRetrieval=true
-      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_USERNAME: testuser
       SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD}
     build:
       context: ./
@@ -37,6 +39,7 @@ services:
       - "8080:8080"
 
   nginx:
+    container_name: nginx
     image: nginx:1.21.5-alpine
     depends_on:
       - mysql
