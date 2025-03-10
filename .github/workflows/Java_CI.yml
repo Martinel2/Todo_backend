@@ -106,7 +106,7 @@ jobs:
             docker-compose down || true
             
             # Pull the latest Docker image
-            docker-compose pull
+            #docker-compose pull
             
             # Start the containers using Docker Compose
             docker-compose up -d --build
