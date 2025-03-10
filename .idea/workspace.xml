@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="/login 제거. 해당 경로를 처리하는 로직을 추가하지 않아서 그런듯">
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="이제 콘솔에서는 정상 작동됨을 확인했음. mysql관련 문제가 있었음">
       <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,14 +302,7 @@
       <workItem from="1741340033076" duration="927000" />
       <workItem from="1741418555317" duration="15810000" />
       <workItem from="1741497724657" duration="12660000" />
-      <workItem from="1741604462949" duration="8345000" />
-    </task>
-    <task id="LOCAL-00146" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
-      <created>1741154801517</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1741154801517</updated>
+      <workItem from="1741604462949" duration="10400000" />
     </task>
     <task id="LOCAL-00147" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
       <created>1741156117746</created>
@@ -646,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741626583203</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="이제 콘솔에서는 정상 작동됨을 확인했음. mysql관련 문제가 있었음">
+      <created>1741628407052</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1741628407052</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -679,7 +680,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - todo.com 인식관련 문제인지 확인하기" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 포트를 잡아먹고있어서 종료후 다시 시도" />
@@ -704,7 +704,8 @@
     <MESSAGE value="application.properties 수정" />
     <MESSAGE value="docker-compose.yml 수정" />
     <MESSAGE value="/login 제거. 해당 경로를 처리하는 로직을 추가하지 않아서 그런듯" />
-    <option name="LAST_COMMIT_MESSAGE" value="/login 제거. 해당 경로를 처리하는 로직을 추가하지 않아서 그런듯" />
+    <MESSAGE value="이제 콘솔에서는 정상 작동됨을 확인했음. mysql관련 문제가 있었음" />
+    <option name="LAST_COMMIT_MESSAGE" value="이제 콘솔에서는 정상 작동됨을 확인했음. mysql관련 문제가 있었음" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
