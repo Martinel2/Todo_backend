@@ -119,7 +119,7 @@ jobs:
       
       - name: Test HTTP response
         run: |
-          curl -v http://backend:8080/login        
+          curl -v http://backend:8080        
       
       
       - name: Remove private key file
