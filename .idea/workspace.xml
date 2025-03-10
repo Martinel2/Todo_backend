@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="/login 제거. 해당 경로를 처리하는 로직을 추가하지 않아서 그런듯">
       <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,9 +84,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.5",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "spring.configuration.checksum": "9500bd2024db3c638214e54930891121",
     "vue.rearranger.settings.migration": "true"
@@ -97,6 +99,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\a\Documents\project_Todo\todo\nginx" />
       <recent name="C:\Users\a\Documents\project_Todo\todo\src\test\resources" />
     </key>
   </component>
@@ -286,352 +289,364 @@
       <workItem from="1740486643555" duration="18660000" />
       <workItem from="1740829081267" duration="7056000" />
       <workItem from="1740985931946" duration="11278000" />
-      <workItem from="1741062123669" duration="12047000" />
+      <workItem from="1741062123669" duration="13267000" />
+      <workItem from="1741150777135" duration="7238000" />
+      <workItem from="1741166963630" duration="7000" />
+      <workItem from="1741169278514" duration="4168000" />
+      <workItem from="1741237708511" duration="46000" />
+      <workItem from="1741238344817" duration="8709000" />
+      <workItem from="1741325430071" duration="19000" />
+      <workItem from="1741326088316" duration="219000" />
+      <workItem from="1741326732708" duration="215000" />
+      <workItem from="1741340033076" duration="927000" />
+      <workItem from="1741418555317" duration="15810000" />
+      <workItem from="1741497724657" duration="12660000" />
+      <workItem from="1741604462949" duration="8345000" />
     </task>
-    <task id="LOCAL-00093" summary="다시 push시에도 ci하도록 수정함">
-      <created>1740508849094</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
+    <task id="LOCAL-00146" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
+      <created>1741154801517</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
       <option name="project" value="LOCAL" />
-      <updated>1740508849094</updated>
+      <updated>1741154801517</updated>
     </task>
-    <task id="LOCAL-00094" summary="cd 해보기">
-      <created>1740829120944</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
+    <task id="LOCAL-00147" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
+      <created>1741156117746</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
       <option name="project" value="LOCAL" />
-      <updated>1740829120945</updated>
+      <updated>1741156117746</updated>
     </task>
-    <task id="LOCAL-00095" summary="cd 해보기">
-      <created>1740829566110</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
+    <task id="LOCAL-00148" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
+      <created>1741157216472</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
       <option name="project" value="LOCAL" />
-      <updated>1740829566110</updated>
+      <updated>1741157216472</updated>
     </task>
-    <task id="LOCAL-00096" summary="cd 해보기">
-      <created>1740829757750</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
+    <task id="LOCAL-00149" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
+      <created>1741157846239</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
       <option name="project" value="LOCAL" />
-      <updated>1740829757751</updated>
+      <updated>1741157846239</updated>
     </task>
-    <task id="LOCAL-00097" summary="cd 해보기">
-      <created>1740830160593</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
+    <task id="LOCAL-00150" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
+      <created>1741158139562</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
       <option name="project" value="LOCAL" />
-      <updated>1740830160593</updated>
+      <updated>1741158139563</updated>
     </task>
-    <task id="LOCAL-00098" summary="cd 해보기">
-      <created>1740830286977</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
+    <task id="LOCAL-00151" summary="cd docker 사용해서 성공시키기 - 포트를 잡아먹고있어서 종료후 다시 시도">
+      <created>1741158785759</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
       <option name="project" value="LOCAL" />
-      <updated>1740830286977</updated>
+      <updated>1741158785759</updated>
     </task>
-    <task id="LOCAL-00099" summary="cd 해보기">
-      <created>1740830908399</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
+    <task id="LOCAL-00152" summary="cd docker 사용해서 성공시키기 - 재생성 후에 폴더가 삭제되어 dockerfile이 없었던 것 같음">
+      <created>1741160060681</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
       <option name="project" value="LOCAL" />
-      <updated>1740830908399</updated>
+      <updated>1741160060681</updated>
     </task>
-    <task id="LOCAL-00100" summary="cd 해보기">
-      <created>1740831301967</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
+    <task id="LOCAL-00153" summary="cd docker 사용해서 성공시키기 - 폴더 경로 수정">
+      <created>1741160811163</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
       <option name="project" value="LOCAL" />
-      <updated>1740831301967</updated>
+      <updated>1741160811163</updated>
     </task>
-    <task id="LOCAL-00101" summary="cd 해보기">
-      <created>1740831657870</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
+    <task id="LOCAL-00154" summary="cd docker 사용해서 성공시키기 - 로컬에서 도메인 등록">
+      <created>1741162889618</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
       <option name="project" value="LOCAL" />
-      <updated>1740831657870</updated>
+      <updated>1741162889618</updated>
     </task>
-    <task id="LOCAL-00102" summary="cd 해보기">
-      <created>1740836097658</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
+    <task id="LOCAL-00155" summary="cd docker 사용해서 성공시키기 - docker compose 사용해보기">
+      <created>1741166363946</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
       <option name="project" value="LOCAL" />
-      <updated>1740836097658</updated>
+      <updated>1741166363946</updated>
     </task>
-    <task id="LOCAL-00103" summary="cd 해보기">
-      <created>1740836137457</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
+    <task id="LOCAL-00156" summary="cd docker 사용해서 성공시키기 - docker compose 사용해보기">
+      <created>1741169390115</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
       <option name="project" value="LOCAL" />
-      <updated>1740836137457</updated>
+      <updated>1741169390116</updated>
     </task>
-    <task id="LOCAL-00104" summary="cd 해보기">
-      <created>1740836653932</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
+    <task id="LOCAL-00157" summary="cd docker 사용해서 성공시키기 - docker compose 사용해보기">
+      <created>1741169587337</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
       <option name="project" value="LOCAL" />
-      <updated>1740836653932</updated>
+      <updated>1741169587337</updated>
     </task>
-    <task id="LOCAL-00105" summary="cd 해보기">
-      <created>1740836850840</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
+    <task id="LOCAL-00158" summary="cd docker 사용해서 성공시키기 - docker compose 사용해보기">
+      <created>1741169937170</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
       <option name="project" value="LOCAL" />
-      <updated>1740836850840</updated>
+      <updated>1741169937170</updated>
     </task>
-    <task id="LOCAL-00106" summary="cd 해보기">
-      <created>1740837136435</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
+    <task id="LOCAL-00159" summary="cd docker 사용해서 성공시키기 - docker compose 사용해보기">
+      <created>1741171055041</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
       <option name="project" value="LOCAL" />
-      <updated>1740837136435</updated>
+      <updated>1741171055041</updated>
     </task>
-    <task id="LOCAL-00107" summary="cd 해보기">
-      <created>1740837861047</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
+    <task id="LOCAL-00160" summary="cd docker 사용해서 성공시키기 - docker compose 사용해보기">
+      <created>1741237740853</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
       <option name="project" value="LOCAL" />
-      <updated>1740837861047</updated>
+      <updated>1741237740853</updated>
     </task>
-    <task id="LOCAL-00108" summary="cd 해보기">
-      <created>1740838637724</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
+    <task id="LOCAL-00161" summary="cd docker 사용해서 성공시키기 - docker compose 사용해보기, host 주소 변경">
+      <created>1741238374187</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
       <option name="project" value="LOCAL" />
-      <updated>1740838637724</updated>
+      <updated>1741238374190</updated>
     </task>
-    <task id="LOCAL-00109" summary="cd 해보기-업로드 시간 줄이기">
-      <created>1740838794942</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
+    <task id="LOCAL-00162" summary="cd docker 사용해서 성공시키기 - 이미 켜져있는 포트가 없음을 확인 후 커밋. 이 커밋에서  오류가 난다면 yml을 통한 compose과정에서 잘못된 빌드를 수행한 것">
+      <created>1741246086250</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
       <option name="project" value="LOCAL" />
-      <updated>1740838794942</updated>
+      <updated>1741246086251</updated>
     </task>
-    <task id="LOCAL-00110" summary="cd 해보기-업로드 시간 줄이기">
-      <created>1740838912195</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
+    <task id="LOCAL-00163" summary="cd docker 사용해서 성공시키기 - 이미 켜져있는 포트가 없음을 확인 후 커밋. 이 커밋에서  오류가 난다면 yml을 통한 compose과정에서 잘못된 빌드를 수행한 것">
+      <created>1741254566428</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
       <option name="project" value="LOCAL" />
-      <updated>1740838912195</updated>
+      <updated>1741254566429</updated>
     </task>
-    <task id="LOCAL-00111" summary="cd 해보기-업로드 시간 줄이기">
-      <created>1740839173550</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
+    <task id="LOCAL-00164" summary="cd docker 사용해서 성공시키기 - 실험해보기">
+      <created>1741262902970</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
       <option name="project" value="LOCAL" />
-      <updated>1740839173550</updated>
+      <updated>1741262902970</updated>
     </task>
-    <task id="LOCAL-00112" summary="cd 해보기-업로드 시간 줄이기">
-      <created>1740839684425</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
+    <task id="LOCAL-00165" summary="cd docker 사용해서 성공시키기 - 실험해보기">
+      <created>1741263037329</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
       <option name="project" value="LOCAL" />
-      <updated>1740839684425</updated>
+      <updated>1741263037329</updated>
     </task>
-    <task id="LOCAL-00113" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741005449955</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
+    <task id="LOCAL-00166" summary="cd docker 사용해서 성공시키기 - 실험해보기">
+      <created>1741263065036</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
       <option name="project" value="LOCAL" />
-      <updated>1741005449957</updated>
+      <updated>1741263065036</updated>
     </task>
-    <task id="LOCAL-00114" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741005852709</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
+    <task id="LOCAL-00167" summary="cd docker 사용해서 성공시키기 - 실험해보기">
+      <created>1741263605694</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
       <option name="project" value="LOCAL" />
-      <updated>1741005852709</updated>
+      <updated>1741263605694</updated>
     </task>
-    <task id="LOCAL-00115" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741006715922</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
+    <task id="LOCAL-00168" summary="cd docker 사용해서 성공시키기 - 실험해보기">
+      <created>1741264973880</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
       <option name="project" value="LOCAL" />
-      <updated>1741006715922</updated>
+      <updated>1741264973880</updated>
     </task>
-    <task id="LOCAL-00116" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741007405900</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
+    <task id="LOCAL-00169" summary="cd docker 사용해서 성공시키기 - 실험해보기-블로그의 conf파일 코드 참고">
+      <created>1741271019856</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
       <option name="project" value="LOCAL" />
-      <updated>1741007405900</updated>
+      <updated>1741271019856</updated>
     </task>
-    <task id="LOCAL-00117" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741009198076</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
+    <task id="LOCAL-00170" summary="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기">
+      <created>1741419064849</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
       <option name="project" value="LOCAL" />
-      <updated>1741009198076</updated>
+      <updated>1741419064851</updated>
     </task>
-    <task id="LOCAL-00118" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741010322658</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
+    <task id="LOCAL-00171" summary="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기(docker 재설치)">
+      <created>1741419804099</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
       <option name="project" value="LOCAL" />
-      <updated>1741010322658</updated>
+      <updated>1741419804099</updated>
     </task>
-    <task id="LOCAL-00119" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741010572563</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
+    <task id="LOCAL-00172" summary="cd docker 사용해서 성공시키기 - 실험해보기- nginx.conf 직접 프로젝트파일에 생성">
+      <created>1741422487955</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
       <option name="project" value="LOCAL" />
-      <updated>1741010572563</updated>
+      <updated>1741422487955</updated>
     </task>
-    <task id="LOCAL-00120" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741010903016</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
+    <task id="LOCAL-00173" summary="cd docker 사용해서 성공시키기 - 실험해보기- nginx.conf 직접 프로젝트파일에 생성">
+      <created>1741438634489</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
       <option name="project" value="LOCAL" />
-      <updated>1741010903016</updated>
+      <updated>1741438634489</updated>
     </task>
-    <task id="LOCAL-00121" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741011090752</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
+    <task id="LOCAL-00174" summary="cd docker 사용해서 성공시키기 - 실험해보기- nginx.conf 직접 프로젝트파일에 생성">
+      <created>1741443614477</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
       <option name="project" value="LOCAL" />
-      <updated>1741011090752</updated>
+      <updated>1741443614477</updated>
     </task>
-    <task id="LOCAL-00122" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741012574316</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
+    <task id="LOCAL-00175" summary="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 수정">
+      <created>1741443771071</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
       <option name="project" value="LOCAL" />
-      <updated>1741012574316</updated>
+      <updated>1741443771071</updated>
     </task>
-    <task id="LOCAL-00123" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741013846374</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
+    <task id="LOCAL-00176" summary="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 수정">
+      <created>1741445945453</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
       <option name="project" value="LOCAL" />
-      <updated>1741013846374</updated>
+      <updated>1741445945453</updated>
     </task>
-    <task id="LOCAL-00124" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741013900729</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
+    <task id="LOCAL-00177" summary="cd docker 사용해서 성공시키기 - 실험해보기- nginx 수정">
+      <created>1741452919460</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
       <option name="project" value="LOCAL" />
-      <updated>1741013900729</updated>
+      <updated>1741452919460</updated>
     </task>
-    <task id="LOCAL-00125" summary="cd 해보기- docker 사용해서 빌드하기">
-      <created>1741014099908</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
+    <task id="LOCAL-00178" summary="cd docker 사용해서 성공시키기 - 실험해보기- nginx 수정">
+      <created>1741454781775</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
       <option name="project" value="LOCAL" />
-      <updated>1741014099908</updated>
+      <updated>1741454781775</updated>
     </task>
-    <task id="LOCAL-00126" summary="cd 해보기- docker 사용해서 빌드하기, git secret 설정">
-      <created>1741014609678</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
+    <task id="LOCAL-00179" summary="cd docker 사용해서 성공시키기 - 실험해보기- mysql compose 설정 수정">
+      <created>1741503576954</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
       <option name="project" value="LOCAL" />
-      <updated>1741014609678</updated>
+      <updated>1741503576955</updated>
     </task>
-    <task id="LOCAL-00127" summary="cd docker 사용해서 성공시키기">
-      <created>1741015675993</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
+    <task id="LOCAL-00180" summary="cd docker 사용해서 성공시키기 - 실험해보기- mysql compose 설정 수정">
+      <created>1741504315776</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
       <option name="project" value="LOCAL" />
-      <updated>1741015675993</updated>
+      <updated>1741504315776</updated>
     </task>
-    <task id="LOCAL-00128" summary="cd docker 사용해서 성공시키기">
-      <created>1741062954802</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
+    <task id="LOCAL-00181" summary="cd docker 사용해서 성공시키기 - 실험해보기- mysql compose 설정 수정">
+      <created>1741505011983</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
       <option name="project" value="LOCAL" />
-      <updated>1741062954803</updated>
+      <updated>1741505011983</updated>
     </task>
-    <task id="LOCAL-00129" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋">
-      <created>1741078490571</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
+    <task id="LOCAL-00182" summary="cd docker 사용해서 성공시키기 - 실험해보기- nginx 설정 수정">
+      <created>1741520050576</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
       <option name="project" value="LOCAL" />
-      <updated>1741078490571</updated>
+      <updated>1741520050577</updated>
     </task>
-    <task id="LOCAL-00130" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋">
-      <created>1741080112212</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
+    <task id="LOCAL-00183" summary="cd docker 사용해서 성공시키기 - 실험해보기- nginx 설정 수정">
+      <created>1741522659479</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
       <option name="project" value="LOCAL" />
-      <updated>1741080112212</updated>
+      <updated>1741522659479</updated>
     </task>
-    <task id="LOCAL-00131" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋">
-      <created>1741082339527</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
+    <task id="LOCAL-00184" summary="cd docker 사용해서 성공시키기 - 실험해보기- dockerfile 설정 수정">
+      <created>1741525209594</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
       <option name="project" value="LOCAL" />
-      <updated>1741082339527</updated>
+      <updated>1741525209594</updated>
     </task>
-    <task id="LOCAL-00132" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741083349710</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
+    <task id="LOCAL-00185" summary="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 설정 수정">
+      <created>1741527156306</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
       <option name="project" value="LOCAL" />
-      <updated>1741083349710</updated>
+      <updated>1741527156306</updated>
     </task>
-    <task id="LOCAL-00133" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741083900537</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
+    <task id="LOCAL-00186" summary="nginx.conf upstream 삭제">
+      <created>1741533278171</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
       <option name="project" value="LOCAL" />
-      <updated>1741083900537</updated>
+      <updated>1741533278172</updated>
     </task>
-    <task id="LOCAL-00134" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741084780347</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
+    <task id="LOCAL-00187" summary="application.properties 수정">
+      <created>1741537522933</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
       <option name="project" value="LOCAL" />
-      <updated>1741084780347</updated>
+      <updated>1741537522933</updated>
     </task>
-    <task id="LOCAL-00135" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741084840832</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
+    <task id="LOCAL-00188" summary="docker-compose.yml 수정">
+      <created>1741618642631</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
       <option name="project" value="LOCAL" />
-      <updated>1741084840832</updated>
+      <updated>1741618642632</updated>
     </task>
-    <task id="LOCAL-00136" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741085523590</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
+    <task id="LOCAL-00189" summary="docker-compose.yml 수정">
+      <created>1741619358673</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
       <option name="project" value="LOCAL" />
-      <updated>1741085523590</updated>
+      <updated>1741619358673</updated>
     </task>
-    <task id="LOCAL-00137" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741086761811</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
+    <task id="LOCAL-00190" summary="docker-compose.yml 수정">
+      <created>1741621652348</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
       <option name="project" value="LOCAL" />
-      <updated>1741086761811</updated>
+      <updated>1741621652348</updated>
     </task>
-    <task id="LOCAL-00138" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741087644316</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
+    <task id="LOCAL-00191" summary="docker-compose.yml 수정">
+      <created>1741622914297</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
       <option name="project" value="LOCAL" />
-      <updated>1741087644316</updated>
+      <updated>1741622914298</updated>
     </task>
-    <task id="LOCAL-00139" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741087960227</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
+    <task id="LOCAL-00192" summary="docker-compose.yml 수정">
+      <created>1741626183138</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
       <option name="project" value="LOCAL" />
-      <updated>1741087960227</updated>
+      <updated>1741626183139</updated>
     </task>
-    <task id="LOCAL-00140" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741088890357</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
+    <task id="LOCAL-00193" summary="docker-compose.yml 수정">
+      <created>1741626377649</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
       <option name="project" value="LOCAL" />
-      <updated>1741088890357</updated>
+      <updated>1741626377650</updated>
     </task>
-    <task id="LOCAL-00141" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741090019841</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
+    <task id="LOCAL-00194" summary="/login 제거. 해당 경로를 처리하는 로직을 추가하지 않아서 그런듯">
+      <created>1741626583203</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
       <option name="project" value="LOCAL" />
-      <updated>1741090019841</updated>
+      <updated>1741626583203</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,32 +679,32 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="ci test 결고 pr에 작성하기" />
-    <MESSAGE value="ci test 결고 pr에 작성하기 - pr시에도 ci하도록 함" />
-    <MESSAGE value="pr되는지 테스트" />
-    <MESSAGE value="OAuth2Service 를 테스트하는 코드 작성 - 기능 테스트" />
-    <MESSAGE value="CustomUserDetailsService를 테스트하는 코드 작성 - 기능 테스트" />
-    <MESSAGE value="리포지토리,서비스,컨트롤러에 대한 모든 단위 기능테스트 코드 작성 완료" />
-    <MESSAGE value="OAuth2ServiceUnitTest 에 예외처리 테스트 추가" />
-    <MESSAGE value="OAuth2ServiceTest 에 예외처리 테스트 추가" />
-    <MESSAGE value="TodoServiceTest에 예외처리 테스트 추가&#10;TodoService 코드에서 예외를 던지도록 하여 TodoController 코드 리팩토링" />
-    <MESSAGE value="TodoService 예외처리 테스트 클래스를 추가하도록 함&#10;TodoService 코드에서 예외를 던지도록 하여 TodoController 코드 리팩토링" />
-    <MESSAGE value="Todo를 다른  사용자가 고치는 경우 예외를 던지도록 코드를 수정&#10;AccessDeniedException을 핸들링하기 위해 예외처리 방식을 변경&#10;그와 동시에 답변도 일관적으로 할 수 있도록 ResultResponse 클래스를 추가" />
-    <MESSAGE value="테스트가 h2 데이터베이스를 사용하도록 설정을 변경함&#10;그 후, 테스트를 리팩토링함&#10;TodoIntergrationTest는 아직 수정이 필요" />
-    <MESSAGE value="TodoIntergrationTest 수정" />
-    <MESSAGE value="ci환경에서도 h2를 사용하도록 수정" />
-    <MESSAGE value="TodoControllerTest를 리팩토링함" />
-    <MESSAGE value="Unversioned Files" />
-    <MESSAGE value="push시에는 ci를 진행하지않도록 수정" />
-    <MESSAGE value="다시 push시에도 ci하도록 수정함" />
-    <MESSAGE value="cd 해보기" />
-    <MESSAGE value="cd 해보기-업로드 시간 줄이기" />
-    <MESSAGE value="cd 해보기- docker 사용해서 빌드하기" />
-    <MESSAGE value="cd 해보기- docker 사용해서 빌드하기, git secret 설정" />
-    <MESSAGE value="cd docker 사용해서 성공시키기" />
-    <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
-    <option name="LAST_COMMIT_MESSAGE" value="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - todo.com 인식관련 문제인지 확인하기" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 포트를 잡아먹고있어서 종료후 다시 시도" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 재생성 후에 폴더가 삭제되어 dockerfile이 없었던 것 같음" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 폴더 경로 수정" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 로컬에서 도메인 등록" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - docker compose 사용해보기" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - docker compose 사용해보기, host 주소 변경" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 이미 켜져있는 포트가 없음을 확인 후 커밋. 이 커밋에서  오류가 난다면 yml을 통한 compose과정에서 잘못된 빌드를 수행한 것" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기-블로그의 conf파일 코드 참고" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- ip및 도메인 수정해보기(docker 재설치)" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- nginx.conf 직접 프로젝트파일에 생성" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 수정" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- nginx 수정" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- mysql compose 설정 수정" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- nginx 설정 수정" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- dockerfile 설정 수정" />
+    <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 설정 수정" />
+    <MESSAGE value="nginx.conf upstream 삭제" />
+    <MESSAGE value="application.properties 수정" />
+    <MESSAGE value="docker-compose.yml 수정" />
+    <MESSAGE value="/login 제거. 해당 경로를 처리하는 로직을 추가하지 않아서 그런듯" />
+    <option name="LAST_COMMIT_MESSAGE" value="/login 제거. 해당 경로를 처리하는 로직을 추가하지 않아서 그런듯" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
