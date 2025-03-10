@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="nginx.conf upstream 삭제">
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="application.properties 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,14 +299,8 @@
       <workItem from="1741326732708" duration="215000" />
       <workItem from="1741340033076" duration="927000" />
       <workItem from="1741418555317" duration="15810000" />
-      <workItem from="1741497724657" duration="12610000" />
-    </task>
-    <task id="LOCAL-00138" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741087644316</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1741087644316</updated>
+      <workItem from="1741497724657" duration="12660000" />
+      <workItem from="1741604462949" duration="1924000" />
     </task>
     <task id="LOCAL-00139" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
       <created>1741087960227</created>
@@ -644,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741533278172</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="application.properties 수정">
+      <created>1741537522933</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1741537522933</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,7 +678,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="cd 해보기- docker 사용해서 빌드하기, git secret 설정" />
     <MESSAGE value="cd docker 사용해서 성공시키기" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정및 정상동작확인용 커밋" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어" />
@@ -702,7 +702,8 @@
     <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- dockerfile 설정 수정" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 실험해보기- application.properties 설정 수정" />
     <MESSAGE value="nginx.conf upstream 삭제" />
-    <option name="LAST_COMMIT_MESSAGE" value="nginx.conf upstream 삭제" />
+    <MESSAGE value="application.properties 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="application.properties 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
