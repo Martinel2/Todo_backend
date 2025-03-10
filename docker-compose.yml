@@ -12,8 +12,6 @@ services:
       TZ: 'Asia/Seoul'
     ports:
       - "3306:3306"
-    volumes:
-      - mysql_data:/var/lib/mysql # MySQL 설정 파일 위치
     command:
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_general_ci
