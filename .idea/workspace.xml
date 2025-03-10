@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="docker-compose.yml 수정">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="docker-compose.yml 수정" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -299,14 +297,7 @@
       <workItem from="1741340033076" duration="927000" />
       <workItem from="1741418555317" duration="15810000" />
       <workItem from="1741497724657" duration="12660000" />
-      <workItem from="1741604462949" duration="2654000" />
-    </task>
-    <task id="LOCAL-00140" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
-      <created>1741088890357</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1741088890357</updated>
+      <workItem from="1741604462949" duration="3063000" />
     </task>
     <task id="LOCAL-00141" summary="cd docker 사용해서 성공시키기 - nginx proxy 설정, compose로 컨테이너 제어">
       <created>1741090019841</created>
@@ -644,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741618642632</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="docker-compose.yml 수정">
+      <created>1741619358673</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1741619358673</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
