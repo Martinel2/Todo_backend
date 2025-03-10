@@ -300,14 +300,7 @@
       <workItem from="1741340033076" duration="927000" />
       <workItem from="1741418555317" duration="15810000" />
       <workItem from="1741497724657" duration="12660000" />
-      <workItem from="1741604462949" duration="5589000" />
-    </task>
-    <task id="LOCAL-00143" summary="cd docker 사용해서 성공시키기 - todo.com 인식관련 문제인지 확인하기">
-      <created>1741150793643</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1741150793645</updated>
+      <workItem from="1741604462949" duration="6207000" />
     </task>
     <task id="LOCAL-00144" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
       <created>1741153071702</created>
@@ -645,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741622914298</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="docker-compose.yml 수정">
+      <created>1741626183138</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1741626183139</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
