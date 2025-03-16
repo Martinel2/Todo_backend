@@ -111,18 +111,18 @@ jobs:
             # Start the containers using Docker Compose
             docker-compose up -d --build
 
-      - name: Add EC2 public IP to /etc/hosts
-        run: |
-          echo "$EC2_PUBLIC_IP backend" | sudo tee -a /etc/hosts
-        env:
-          EC2_PUBLIC_IP: ${{ secrets.EC2_HOST }}
+      #- name: Add EC2 public IP to /etc/hosts
+      #  run: |
+      #    echo "$EC2_PUBLIC_IP backend" | sudo tee -a /etc/hosts
+      #  env:
+      #    EC2_PUBLIC_IP: ${{ secrets.EC2_HOST }}
 
       #- name: Wait for init server
       #  run: sleep 650
 
-      - name: Test HTTP response
-        run: |
-          curl -v http://backend:8080
+      #- name: Test HTTP response
+      #  run: |
+      #    curl -v http://backend:8080
       
       
       - name: Remove private key file

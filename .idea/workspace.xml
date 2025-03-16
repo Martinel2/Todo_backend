@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="oauth가 외부에서도 가능하도록 수정해보기" />
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="oauth가 외부에서도 가능하도록 수정해보기 - 주소가 도메인일 필요가 있음. dns주소를 받아올 필요가 있는 것 같다.">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Java_CI.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todo/todo/Filter/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todo/todo/Filter/JwtAuthenticationFilter.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,37 +66,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelOrder2": "2",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RequestMappingsPanelWidth2": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/a/Documents/project_Todo/todo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.5",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "9500bd2024db3c638214e54930891121",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/a/Documents/project_Todo/todo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9500bd2024db3c638214e54930891121&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\a\Documents\project_Todo\todo\nginx" />
@@ -298,13 +302,9 @@
       <workItem from="1741418555317" duration="15810000" />
       <workItem from="1741497724657" duration="12660000" />
       <workItem from="1741604462949" duration="10746000" />
-    </task>
-    <task id="LOCAL-00148" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
-      <created>1741157216472</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1741157216472</updated>
+      <workItem from="1741631369006" duration="121000" />
+      <workItem from="1742115718514" duration="634000" />
+      <workItem from="1742133233574" duration="1339000" />
     </task>
     <task id="LOCAL-00149" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
       <created>1741157846239</created>
@@ -642,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741631010489</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="oauth가 외부에서도 가능하도록 수정해보기 - 주소가 도메인일 필요가 있음. dns주소를 받아올 필요가 있는 것 같다.">
+      <created>1741631474997</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1741631474998</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -675,7 +682,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 포트를 잡아먹고있어서 종료후 다시 시도" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 재생성 후에 폴더가 삭제되어 dockerfile이 없었던 것 같음" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 폴더 경로 수정" />
@@ -700,7 +706,8 @@
     <MESSAGE value="/login 제거. 해당 경로를 처리하는 로직을 추가하지 않아서 그런듯" />
     <MESSAGE value="이제 콘솔에서는 정상 작동됨을 확인했음. mysql관련 문제가 있었음" />
     <MESSAGE value="oauth가 외부에서도 가능하도록 수정해보기" />
-    <option name="LAST_COMMIT_MESSAGE" value="oauth가 외부에서도 가능하도록 수정해보기" />
+    <MESSAGE value="oauth가 외부에서도 가능하도록 수정해보기 - 주소가 도메인일 필요가 있음. dns주소를 받아올 필요가 있는 것 같다." />
+    <option name="LAST_COMMIT_MESSAGE" value="oauth가 외부에서도 가능하도록 수정해보기 - 주소가 도메인일 필요가 있음. dns주소를 받아올 필요가 있는 것 같다." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
