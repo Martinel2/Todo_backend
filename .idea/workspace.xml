@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="oauth가 외부에서도 가능하도록 수정해보기 - noip로 무료 ddns를 받아서 실험해보기">
+    <list default="true" id="c57d8f04-7626-4fd7-b620-c010b6ea075d" name="Changes" comment="docker volume을 설정하여 db에 값을 영속적으로 저장하도록 하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todo/todo/Service/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todo/todo/Service/TodoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,14 +304,7 @@
       <workItem from="1742115718514" duration="634000" />
       <workItem from="1742133233574" duration="2134000" />
       <workItem from="1742219607629" duration="1858000" />
-      <workItem from="1742221920748" duration="347000" />
-    </task>
-    <task id="LOCAL-00150" summary="cd docker 사용해서 성공시키기 - 인스턴스 재생성 후 정상 통과되는지 확인">
-      <created>1741158139562</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1741158139563</updated>
+      <workItem from="1742221920748" duration="1295000" />
     </task>
     <task id="LOCAL-00151" summary="cd docker 사용해서 성공시키기 - 포트를 잡아먹고있어서 종료후 다시 시도">
       <created>1741158785759</created>
@@ -651,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1742135785698</updated>
     </task>
-    <option name="localTasksCounter" value="199" />
+    <task id="LOCAL-00199" summary="docker volume을 설정하여 db에 값을 영속적으로 저장하도록 하기">
+      <created>1742224037402</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1742224037403</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -684,7 +682,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="cd docker 사용해서 성공시키기 - 재생성 후에 폴더가 삭제되어 dockerfile이 없었던 것 같음" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 폴더 경로 수정" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - 로컬에서 도메인 등록" />
     <MESSAGE value="cd docker 사용해서 성공시키기 - docker compose 사용해보기" />
@@ -709,7 +706,8 @@
     <MESSAGE value="oauth가 외부에서도 가능하도록 수정해보기" />
     <MESSAGE value="oauth가 외부에서도 가능하도록 수정해보기 - 주소가 도메인일 필요가 있음. dns주소를 받아올 필요가 있는 것 같다." />
     <MESSAGE value="oauth가 외부에서도 가능하도록 수정해보기 - noip로 무료 ddns를 받아서 실험해보기" />
-    <option name="LAST_COMMIT_MESSAGE" value="oauth가 외부에서도 가능하도록 수정해보기 - noip로 무료 ddns를 받아서 실험해보기" />
+    <MESSAGE value="docker volume을 설정하여 db에 값을 영속적으로 저장하도록 하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker volume을 설정하여 db에 값을 영속적으로 저장하도록 하기" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
