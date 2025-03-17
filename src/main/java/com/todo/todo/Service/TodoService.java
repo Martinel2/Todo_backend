@@ -31,7 +31,7 @@ public class TodoService {
     public Todo createTodo(TodoCreateDTO todoCreateDTO) {
         //NullPointerException은 예상치못한 예외에서 사용하는 것
         User user = userRepository.findByEmailAndProvider(todoCreateDTO.getEmail(), todoCreateDTO.getProvider())
-                .orElseThrow(() -> new IllegalArgumentException("User not found with email: " + todoCreateDTO.getEmail()));
+                .orElseThrow(() -> new IllegalArgumentException("User not found with email: " + todoCreateDTO.getEmail() + todoCreateDTO.getProvider()));
 
         Todo todo = new Todo();
         todo.setTitle(todoCreateDTO.getContent());
